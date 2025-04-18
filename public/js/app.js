@@ -11,7 +11,7 @@ let people = new Person([], [], [])
 
 console.log(people);
 
-if (ask == "login") {
+if (ask == "sign up") {
     let email = prompt("enter your email").split(" ").join("")
     people.email = email
     if (email.length > 10) {
@@ -32,14 +32,22 @@ if (ask == "login") {
                 password.slice(0, -1)
             }
         } else {
-          alert("smaitake s4are mane 5 l 7orofe ")
+          alert("ur name is too short")
           people.name= ansr.slice(0,-1)
         }
     } else {
-        alert("3afake email dyalake ya s4are mane 10 dyale caractire ya mafihche @")
+        alert("ur mail is too short or doesnt contain a special character")
       people.email=email.slice(0,-1)
     }
 
 } else {
-    alert("3afake lmara jaya 3amare hadchi")
+    alert("u should fill all the blanks")
+}
+
+// Age
+let age = prompt("how old are u?")
+if (age1.length >= 3) {
+    alert("you are old enough")
+} else {
+    alert("welcome")
 }
