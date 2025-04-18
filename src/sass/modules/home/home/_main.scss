@@ -1,0 +1,78 @@
+.parent{
+    padding: 10vh 0vh;
+    display: flex;
+    justify-content: space-around;
+    .photo>img{
+        width: 67vh;
+
+    }
+
+    .child1>img{
+        width: 120px;
+    }
+    .child2{
+
+        display: flex;
+        flex-direction: column;
+        gap: 9vh;
+        :nth-child(2){
+
+
+            width: 40vh;
+        }
+        span{
+            color: rgba(128, 128, 128, 0.432);
+        }
+        .child3>p{
+            text-decoration: line-through;
+
+        }
+
+        p{
+            width: 50vh;
+            color: #00000065;
+        }
+        a:first-child{
+            text-decoration: none;
+            background-color: #80808032;
+            padding: 20px 153px;
+            color: black;
+            border-radius:10px;
+        }
+        a:nth-child(2){
+            text-decoration: none;
+            background-color: orange;
+            padding: 20px 30px;
+            color: black;
+            border-radius:10px;
+        }
+        .pad{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            text-align: center;
+        }
+
+    }
+}
+@media (max-width: 428px) {
+    .parent{
+        flex-direction: column;
+    }
+    .child1{
+        display: none;
+
+    }
+    .child2{
+        padding-left: 20px;
+    }
+    .child3{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40vh;
+    }
+    .pad{
+        flex-direction: column;
+    }
+}
