@@ -51,3 +51,17 @@ if (age1.length >= 3) {
 } else {
     alert("welcome")
 }
+
+// log in
+function login() {
+    let email = prompt("Enter your email").toLowerCase().trim()
+    let password = prompt("Enter your password").trim()
+    let user = user.find(e => e.email === email)
+
+    if (user && user.password === password) {
+        alert("welcome")
+        
+    } else {
+        alert("cant login try again")
+    }
+}
