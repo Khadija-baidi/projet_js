@@ -63,6 +63,35 @@ if (age1.length >= 3) {
     alert("welcome")
 }
 
+
+// changing password
+
+    const changePassword = () => {
+        let email = prompt('Enter your email:')
+
+        let user = dataUser.find(e => e.email === email)
+
+        if (!e) {
+            alert("email doesnt exist")
+            return;
+        }
+
+        let newPass = prompt('Enter a password:')
+
+        while (.check(newPass) || newPass.length < 7) {
+            newPass = prompt('your password is chort or doesnt contain special character')
+        }
+
+        e.password = newPass;
+        let confirm = prompt("confirm your password :")
+        while (confirm != newPass) {
+            confirm = prompt("try again :")
+        }
+
+        alert("Password changed successfully!");
+
+    }
+
 // log in
 function login() {
     let email = prompt("Enter your email").toLowerCase().trim()
