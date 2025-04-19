@@ -1,3 +1,14 @@
+let database = [
+    {
+        name: "khadija baidi",
+        email: "khadijabaidi@gmail.com",
+        age: 21,
+        password: '2000',
+        balance: 1000,
+        history: [],
+        loan: 0
+    }
+];
 // asking user for info
 let ask = prompt("login , sing up , change password").trim()
 class Person {
@@ -65,3 +76,4 @@ function login() {
         alert("cant login try again")
     }
 }
+
