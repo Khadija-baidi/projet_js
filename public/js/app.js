@@ -77,3 +77,53 @@ function login() {
     }
 }
 
+// banking services
+switch (choices) {
+
+    case "withdraw":
+        let ask = Number(prompt("How much do you want to withdraw"))
+        if (ask <= user.balance) {
+            user.balance -= ask
+            alert(`You have ${user.balance}`);
+        } else {
+            alert("dont have enough money")
+        }
+        break;
+
+
+    case "deposit":
+        let deposit = Number(prompt("Deposit between 1 and 1000"));
+
+        while (isNaN(deposit) || deposit < 1 || deposit > 1000) {
+            alert("cant deposit this money try again");
+            deposit = Number(prompt("deposit between 1 and 1000"));
+        }
+
+        user.balance += deposit;
+        alert(`you deposit ${deposit}.`);
+        alert(`your have ${user.balance}`);
+        break;
+
+
+    case "loan":
+        let Loan = Number(prompt("How much do you want to loan"))
+        let numb = user.balance * 0.2
+        if (askForLoan <= numb) {
+            user.balance += Loan
+            user.loan = Loan;
+            alert("loan successfuly");
+        }
+        else {
+            alert("its to much")
+        }
+        console.log(user.balance);
+
+        break;
+
+
+
+    default:"hadchi li eta lah"
+        break;
+}
+}
+}
