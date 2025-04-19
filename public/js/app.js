@@ -21,7 +21,7 @@ class Person {
 let people = new Person([], [], [])
 
 console.log(people);
-
+// sign up
 if (ask == "sign up") {
     let email = prompt("enter your email").split(" ").join("")
     people.email = email
@@ -124,6 +124,4 @@ switch (choices) {
 
     default:"hadchi li eta lah"
         break;
-}
-}
 }
